@@ -1,0 +1,50 @@
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(135deg, #f6d365, #fda085);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.container {
+  background: rgba(255,255,255,0.9);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+button {
+  padding: 12px 25px;
+  font-size: 18px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 12px;
+  background-color: #ff6b6b;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background-color: #ff4757;
+}
+
+#message {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #ff4757;
+  animation: fadeIn 1s forwards;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
